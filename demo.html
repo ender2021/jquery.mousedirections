@@ -1,0 +1,19 @@
+<html !doctype>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousedirections.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$.mousedirections();
+		$(document).bind('jquery.mousedirections.gesture', function(e,dir)
+		{
+			alert("You gestured " + dir + "!");
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>Mouse Directions Demo</h1>
+	<p>Hold down the right mouse button and drag in a direction. Release to trigger an event.
+</body>
+</html>
